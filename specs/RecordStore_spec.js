@@ -29,6 +29,10 @@ describe("Record Store", function(){
     assert.equal("Glasgow", recordStore.city);
   });
 
+  it("should have a balance", function(){
+    assert.equal(0, recordStore.balance);
+  });
+
   it("should start with no inventory", function(){
     assert.equal(0, recordStore.inventory.length);
   });
@@ -37,4 +41,12 @@ describe("Record Store", function(){
     recordStore.addRecord(record4);
     assert.equal(1, recordStore.inventory.length);
   });
+
+  it("should be able to add to inventory", function(){
+    recordStore.addRecord(record1);
+    recordStore.addRecord(record2);
+    recordStore.addRecord(record3);
+    recordStore.addRecord(record4);
+    assert.equal(4, recordStore.inventory.length);
+});
 });
