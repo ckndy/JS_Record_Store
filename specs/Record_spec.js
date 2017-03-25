@@ -1,20 +1,14 @@
 var assert = require('assert');
 var Record = require('../record');
 
-var record1 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record2 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record3 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record4 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record5 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record6 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record7 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record8 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
-// var record9 = new Record("Led Zeppelin", "Led Zeppelin IV" 20);
+var record = new Record("Led Zeppelin", "Led Zeppelin", 20);
+var record = new Record("Led Zeppelin", "Led Zeppelin II", 20);
+var record = new Record("Led Zeppelin", "Led Zeppelin III", 20);
+var record = new Record("Led Zeppelin", "Led Zeppelin IV", 20);
 
 describe("Record", function(){
-
   it("should have an artist", function(){
-    assert.equal("Led Zeppelin", record1.artist);
+    assert.equal("Led Zeppelin", record.artist);
   });
 
   it("should have a title", function(){
