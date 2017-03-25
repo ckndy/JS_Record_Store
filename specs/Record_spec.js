@@ -1,9 +1,6 @@
 var assert = require('assert');
 var Record = require('../record');
 
-var record = new Record("Led Zeppelin", "Led Zeppelin", 20);
-var record = new Record("Led Zeppelin", "Led Zeppelin II", 20);
-var record = new Record("Led Zeppelin", "Led Zeppelin III", 20);
 var record = new Record("Led Zeppelin", "Led Zeppelin IV", 20);
 
 describe("Record", function(){
