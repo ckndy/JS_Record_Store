@@ -6,7 +6,6 @@ var recordStore;
 describe("Record Store", function(){
 
   beforeEach(function(){
-
     recordStore = new RecordStore("Big Al's Record Store", "Glasgow");
     
   });
@@ -17,5 +16,9 @@ describe("Record Store", function(){
 
   it("should have a city", function(){
     assert.equal("Glasgow", recordStore.city)
+  });
+
+  it("should start with no inventory", function(){
+    assert.equal(0, recordStore.inventory.length)
   });
 });
