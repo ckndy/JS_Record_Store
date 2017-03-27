@@ -15,6 +15,8 @@ describe("Record", function(){
   it("should have a price", function(){
     assert.equal(20, record.price);
   });
+
+  // it("should print out the Records details as a string.", function(){
+  //   assert.equal("Led Zeppelin, Led Zeppelin IV, 20", record.print());
+  // });
 });
-
-
